@@ -1,0 +1,8 @@
+<ul>
+  <% @artciles.each do |article| %>
+    <li><%=link_to article.title, task_path(article)%></li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Create", tasks_new_path %>
